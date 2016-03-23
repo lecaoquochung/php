@@ -1,6 +1,6 @@
 <?php
-define('OAUTH2_CLIENT_ID', '');
-define('OAUTH2_CLIENT_SECRET', '');
+define('OAUTH2_CLIENT_ID', 'bf1b62071e2496d81861');
+define('OAUTH2_CLIENT_SECRET', 'f4a673e5439b4c3b1a6f5ab2fbdb149b80fd417b');
 $authorizeURL = 'https://github.com/login/oauth/authorize';
 $tokenURL = 'https://github.com/login/oauth/access_token';
 $apiURLBase = 'https://api.github.com/';
