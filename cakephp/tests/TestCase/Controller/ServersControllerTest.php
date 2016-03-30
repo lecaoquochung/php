@@ -1,13 +1,13 @@
 <?php
 namespace App\Test\TestCase\Controller;
 
-use App\Controller\SeopatternsController;
+use App\Controller\ServersController;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
- * App\Controller\SeopatternsController Test Case
+ * App\Controller\ServersController Test Case
  */
-class SeopatternsControllerTest extends IntegrationTestCase
+class ServersControllerTest extends IntegrationTestCase
 {
 
     /**
@@ -16,9 +16,9 @@ class SeopatternsControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.seopatterns',
-        'app.keywords',
         'app.servers',
+        'app.keywords',
+        'app.seopatterns',
         'app.seotracking_categories'
     ];
 
