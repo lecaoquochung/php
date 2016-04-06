@@ -2,6 +2,8 @@
 
 ## Syntax
 
+### Variable
+
 ### String
 
 ### Array 
@@ -12,6 +14,8 @@
 $output = array_values(array_filter(array_unique(Hash::extract($logSeotrackings,'{n}.LogSeotracking.seotracking_category_id')));
 sort($output);
 ```
+
+### Function
 
 ## Environment
 
