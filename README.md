@@ -2,6 +2,8 @@
 
 ## Syntax
 
+### String
+
 ### Array 
 
 #### Array Sort
@@ -10,3 +12,11 @@
 $output = array_values(array_filter(array_unique(Hash::extract($logSeotrackings,'{n}.LogSeotracking.seotracking_category_id')));
 sort($output);
 ```
+
+## Environment
+
+### MAC
+
+### WINDOW
+
+### LINUX (RHEL, CentOS)
