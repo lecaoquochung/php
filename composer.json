@@ -1,5 +1,10 @@
 {
+    "name": "lecaoquochung/php",
     "require": {
+        "cakephp/cakephp": "2.*",
         "facebook/php-sdk-v4": "^5.1"
+    },
+    "config": {
+      "vendor-dir": "vendor/"
     }
 }
