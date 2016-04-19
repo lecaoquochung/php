@@ -95,3 +95,5 @@ CakeLog::config('error', array(
 ));
 
 CakePlugin::load('ContactManager', array('bootstrap' => false, 'routes' => false));
+
+CakePlugin::load('FacebookConnect', array('bootstrap' => false, 'routes' => false));
