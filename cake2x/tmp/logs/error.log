@@ -1,0 +1,9 @@
+2016-04-19 19:20:38 Error: [MissingControllerException] Controller class FacebookController could not be found.
+Exception Attributes: array (
+  'class' => 'FacebookController',
+  'plugin' => NULL,
+)
+Request URL: /php/cake2x/facebook
+Stack Trace:
+#0 /home/projects/php/cake2x/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
