@@ -31,7 +31,7 @@ else
 #        echo "From:".$from;
 #        echo "<br />";
          echo "
-        <form method='post' action='sendmail.php'>
+        <form method='post' action='index.php'>
         From: <input name='from' type='text' value='".$admin."'><br />
         To Email: <input name='email' type='text'><br />
         Subject: <input name='subject' type='text'><br />
