@@ -2,6 +2,8 @@
 .DS_Store
 
 # .gitignore file
+.ftpconfig
+composer.lock
 
 # Cake2x
 

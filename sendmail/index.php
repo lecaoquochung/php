@@ -1,9 +1,17 @@
 <?php
+
+// Test send mail with PHP
+// TODO encrypt email with Transport Layer Security (TLS)
+// Example
+// http://cyberstarweb.com/send-encrypted-email-using-certificates-in-php/
+
+// 3rd service
+// https://gsuite.google.com/pricing.html
 echo 'TEST SENDMAIL SERVER: '.$_SERVER['HTTP_HOST'];
 echo '<br />';
-echo $_SERVER['HTTP_HOST'] !== 'sem-check.givery.co.jp'?$test_account:'';
 $sender_ip = $_SERVER['REMOTE_ADDR'];
 $admin = "le.hung@givery.co.jp" ;
+
 if (isset($_REQUEST['email']) && $_REQUEST['email']!="")
 //if "email" is filled out, send email
   {
@@ -25,10 +33,9 @@ if (isset($_REQUEST['email']) && $_REQUEST['email']!="")
   echo "<br />";
   echo 'Your IP will be saved: '.$sender_ip;
   }
-else
-//if "email" is not filled out, display the form
-  {
-#        echo "From:".$from;
+else {
+ //if "email" is not filled out, display the form
+ # echo "From:".$from;
 #        echo "<br />";
          echo "
         <form method='post' action='index.php'>
