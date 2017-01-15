@@ -1,12 +1,13 @@
 # PHP Learning Projects
 
+# PHP
 ## Syntax
 
 ### Variable
 
 ### String
 
-### Array 
+### Array
 
 #### Array Sort
 - http://php.net/manual/en/function.sort.php
@@ -17,10 +18,13 @@ sort($output);
 
 ### Function
 
-## Environment
-
-### MAC
-
-### WINDOW
-
-### LINUX (RHEL, CentOS)
+# FUELPHP
+- Init fuel php http://fuelphp.com/docs/installation/instructions.html
+```
+curl get.fuelphp.com/oil | sh
+oil create <project_name>
+```
+- Composer
+```
+php composer.phar create-project fuel/fuel fuel
+```
