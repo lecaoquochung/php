@@ -12,3 +12,4 @@ composer.lock
 # Wordpress
 
 # SMF
+smf/cache/*
