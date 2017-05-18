@@ -1,0 +1,9 @@
+# Automatically created by ./dockercentos.sh latest
+docker
+docker-centos
+php
+public
+test
+docker-compose.yml
+dockercentos.sh
+.gitignore-n

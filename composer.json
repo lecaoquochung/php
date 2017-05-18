@@ -1,5 +1,6 @@
 {
     "name": "lecaoquochung/php",
+    "description": "Project for learning PHP",
     "require": {
         "cakephp/cakephp": "2.*",
         "facebook/php-sdk-v4": "^5.1"

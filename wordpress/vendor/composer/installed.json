@@ -1,91 +1,62 @@
 [
     {
-        "name": "johnpbloch/wordpress-core-installer",
-        "version": "0.2.1",
-        "version_normalized": "0.2.1.0",
+        "name": "fancyguy/webroot-installer",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-            "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2"
+            "url": "https://github.com/fancyguy/webroot-installer.git",
+            "reference": "4888a3dad9ab3b3da505a149230be0ec2ab837f4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a04c2c383ef13aae077f36799ed2eafdebd618d2",
-            "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2",
+            "url": "https://api.github.com/repos/fancyguy/webroot-installer/zipball/4888a3dad9ab3b3da505a149230be0ec2ab837f4",
+            "reference": "4888a3dad9ab3b3da505a149230be0ec2ab837f4",
             "shasum": ""
         },
-        "require": {
-            "composer-plugin-api": "^1.0"
-        },
-        "conflict": {
-            "composer/installers": "<1.0.6"
-        },
         "require-dev": {
-            "composer/composer": "1.0.*@dev"
+            "composer/composer": "1.0.*@dev",
+            "phpunit/phpunit": "3.7.*"
         },
-        "time": "2015-06-11 15:15:30",
-        "type": "composer-plugin",
+        "time": "2013-01-29T22:51:45+00:00",
+        "type": "composer-installer",
         "extra": {
-            "class": "johnpbloch\\Composer\\WordPressCorePlugin"
+            "class": "FancyGuy\\Composer\\WebrootInstaller"
         },
         "installation-source": "dist",
         "autoload": {
             "psr-0": {
-                "johnpbloch\\Composer\\": "src/"
+                "FancyGuy\\Composer\\": "src/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "GPL-2.0+"
+            "BSD-3-Clause"
         ],
         "authors": [
             {
-                "name": "John P. Bloch",
-                "email": "me@johnpbloch.com"
+                "name": "Steve Buzonas",
+                "email": "steve@fancyguy.com",
+                "homepage": "http://www.stevebuzonas.com"
             }
         ],
-        "description": "A custom installer to handle deploying WordPress with composer",
-        "keywords": [
-            "wordpress"
-        ]
+        "description": "A composer installer for libraries that live in an application webroot.",
+        "homepage": "http://fancyguy.github.com/webroot-installer/"
     },
     {
-        "name": "johnpbloch/wordpress",
-        "version": "4.2",
-        "version_normalized": "4.2.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/johnpbloch/wordpress.git",
-            "reference": "4c247a5f81af6207a99ecda3ce3b895a9f6af84e"
-        },
+        "name": "wordpress",
+        "version": "4.7.4",
+        "version_normalized": "4.7.4.0",
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/4c247a5f81af6207a99ecda3ce3b895a9f6af84e",
-            "reference": "4c247a5f81af6207a99ecda3ce3b895a9f6af84e",
-            "shasum": ""
+            "url": "https://github.com/WordPress/WordPress/archive/4.7.4.zip",
+            "reference": null,
+            "shasum": null
         },
         "require": {
-            "johnpbloch/wordpress-core-installer": "~0.2",
-            "php": ">=5.3.2"
+            "fancyguy/webroot-installer": "1.0.0"
         },
-        "time": "2015-04-23 16:31:07",
-        "type": "wordpress-core",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "WordPress Community",
-                "homepage": "http://wordpress.org/about/"
-            }
-        ],
-        "description": "WordPress is web software you can use to create a beautiful website or blog.",
-        "homepage": "http://wordpress.org/",
-        "keywords": [
-            "blog",
-            "cms"
-        ]
+        "type": "webroot",
+        "installation-source": "dist"
     }
 ]

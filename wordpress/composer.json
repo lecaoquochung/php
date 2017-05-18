@@ -1,9 +1,29 @@
 {
-  "require": {
-    "php": ">=5.4",
-    "johnpbloch/wordpress": "4.2"
-  },
-  "extra": {
-    "wordpress-install-dir": "wp"
-  }
+    "name": "Worpress CI Development",
+    "description": "Manage wordpress source code version with composer and git",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress",
+                "type": "webroot",
+                "version": "4.7.4",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.7.4.zip"
+                },
+                "require" : {
+                    "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "wordpress": "4.7.4",
+        "fancyguy/webroot-installer": "1.0.0"
+    },
+    "extra": {
+        "webroot-dir": "public/wp",
+        "webroot-package": "wordpress"
+    }
 }

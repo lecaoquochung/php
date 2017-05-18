@@ -1,5 +1,11 @@
 # FUELPHP DEVELOPMENT LOGS
 
+# Install fuelphp 
+- Composer
+```
+composer create-project fuel/fuel --prefer-dist .
+```
+
 # Database
 - Generate
 ```
